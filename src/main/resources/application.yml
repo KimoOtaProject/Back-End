@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/kimoota?serverTimezone=UTC
+    username: kimoota
+    password: kimoota
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 534550869558-o011ia4tbo60ilnhd6oqopnsveff0cb6.apps.googleusercontent.com
+            client-secret: RKKs1lOimOvtjg1rNygNZjX6
+            scope: profile,email
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
