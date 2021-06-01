@@ -15,20 +15,20 @@ import java.util.Optional;
 public interface SpringDataJpaUserRepository extends JpaRepository<User,Long>, UserRepository {
 
     @Override
-    @Query("from user u where u.enabled = true and u.id = :id")
+    @Query("from User u where u.enabled = true and u.id = :id")
     Optional<User> findById(@Param("id")Long id);
 
     @Override
-    @Query("from user u where u.enabled = true and u.email = :email")
+    @Query("from User u where u.enabled = true and u.email = :email")
     Optional<User> findByEmail(@Param("email")String email);
 
     @Override
-    @Query("from user u where u.enabled = true and u.name = :name")
+    @Query("from User u where u.enabled = true and u.name = :name")
     List<User> findByName(@Param("name")String name);
 
     @Override
     @Transactional
     @Modifying
-    @Query("update user set u.enabled = false where u.id=:id")
+    @Query("update User u set u.enabled = false where u.id=:id")
     void deleteById(@Param("id")Long id);
 }
