@@ -11,17 +11,19 @@ spring:
       ddl-auto: update
 
 
+  # oauth 공급자 정보가 담긴 application-oauth.properties 파일을 포함합니다.
   profiles:
-    include: oauth # application-oauth.properties 포함하겠단 말입니다.
+    include: oauth
 
 app:
   auth:
     tokenSecret: 926D96C90030DD58429D2751AC1BDBBC
     tokenExpirationMsec: 864000000
   oauth2:
-    # OAuth2 공급자로 성공적으로 인증 한 후 사용자에 대한 인증 토큰을 생성하고 토큰을
-    # 프론트 엔드 클라이언트가 /oauth2/authorize 요청에서 지정한 redirectUri입니다.
-    # 쿠키는 모바일 클라이언트에서 잘 작동하지 않기 때문에 사용하지 않습니다.
+    # OAuth2 공급자로부터 성공적으로 인증 했다면,
+    # 클라이언트의 /oauth2/authorize 요청에서 설정한
+    # redirectUri로 사용자 인증 토큰을 생성하여 전송합니다.
+    # 모바일 클라이언트 호환성을 위해 쿠키는 사용하지 않습니다.
     authorizedRedirectUris:
       - http://localhost:3000/oauth2/redirect
       - myandroidapp://oauth2/redirect
