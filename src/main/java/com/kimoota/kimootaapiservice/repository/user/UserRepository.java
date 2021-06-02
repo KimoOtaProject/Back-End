@@ -1,4 +1,4 @@
-package com.kimoota.kimootaapiservice.repository;
+package com.kimoota.kimootaapiservice.repository.user;
 
 import com.kimoota.kimootaapiservice.domain.User;
 
