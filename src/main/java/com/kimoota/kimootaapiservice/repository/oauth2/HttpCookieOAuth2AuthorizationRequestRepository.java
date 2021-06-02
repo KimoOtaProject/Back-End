@@ -1,4 +1,4 @@
-package com.kimoota.kimootaapiservice.oauth2;
+package com.kimoota.kimootaapiservice.repository.oauth2;
 
 import com.kimoota.kimootaapiservice.utils.CookieUtils;
 import com.kimoota.kimootaapiservice.utils.SerializeUtils;
