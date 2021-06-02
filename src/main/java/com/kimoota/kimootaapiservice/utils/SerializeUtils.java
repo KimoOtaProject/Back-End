@@ -11,7 +11,7 @@ public class SerializeUtils {
                 .encodeToString(SerializationUtils.serialize(o));
     }
 
-    public static <T>T deserialize(String raw, Class<T> cls) {
+    public static <T> T deserialize(String raw, Class<T> cls) {
         return cls.cast(
                 SerializationUtils.deserialize(
                         Base64.getDecoder().decode(raw)));
