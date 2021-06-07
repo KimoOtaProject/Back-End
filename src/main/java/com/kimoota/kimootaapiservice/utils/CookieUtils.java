@@ -14,7 +14,7 @@ public class CookieUtils {
 
         return cookies.isPresent()?
                 Arrays.stream(cookies.get())
-                        .filter(c->c.getName().equals(key))
+                        .filter(c -> c.getName().equals(key))
                         .findFirst():
                 Optional.empty();
     }
@@ -33,9 +33,9 @@ public class CookieUtils {
         Optional.ofNullable(request.getCookies())
                 .ifPresent(cookies ->
                         Arrays.stream(cookies)
-                                .filter(c->c.getName().equals(key))
+                                .filter(c -> c.getName().equals(key))
                                 .findFirst()
-                                .ifPresent(c->{
+                                .ifPresent(c -> {
                                     c.setMaxAge(0);
                                     c.setPath("/");
                                     c.setValue("");
