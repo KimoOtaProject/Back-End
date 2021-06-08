@@ -1,4 +1,4 @@
-package com.kimoota.kimootaapiservice.security;
+package com.kimoota.kimootaapiservice.security.oauth2;
 
 import com.kimoota.kimootaapiservice.domain.User;
 import lombok.AllArgsConstructor;
