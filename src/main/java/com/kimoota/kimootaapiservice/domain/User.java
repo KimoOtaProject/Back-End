@@ -10,7 +10,6 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 
-@Builder
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -42,6 +41,22 @@ public class User extends BaseTimeEntity {
     private String providerId;
 
     private String imageUrl;
+
+    @Builder
+    public User(
+            Long id, String email,
+            String name, String password,
+            String providerId, String imageUrl,
+            AuthProvider provider) {
+
+        this.id = id;
+        this.email = email;
+        this.name = name;
+        this.password = password;
+        this.providerId = providerId;
+        this.imageUrl = imageUrl;
+        this.provider = provider;
+    }
 
     public void setName(String name) {
         this.name = name;
