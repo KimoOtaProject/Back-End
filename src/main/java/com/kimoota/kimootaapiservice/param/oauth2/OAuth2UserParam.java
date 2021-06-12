@@ -1,6 +1,5 @@
 package com.kimoota.kimootaapiservice.param.oauth2;
 
-import lombok.Builder;
 import lombok.Getter;
 
 import java.util.Map;
@@ -11,7 +10,6 @@ public abstract class OAuth2UserParam {
 
     protected Map<String, Object> attributes;
 
-    @Builder
     public OAuth2UserParam(Map<String, Object> attributes) {
         this.attributes = attributes;
     }
