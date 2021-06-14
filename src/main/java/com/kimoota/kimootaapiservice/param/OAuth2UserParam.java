@@ -1,4 +1,4 @@
-package com.kimoota.kimootaapiservice.param.oauth2;
+package com.kimoota.kimootaapiservice.param;
 
 import lombok.Getter;
 

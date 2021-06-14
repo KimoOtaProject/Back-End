@@ -1,4 +1,4 @@
-package com.kimoota.kimootaapiservice.param.oauth2;
+package com.kimoota.kimootaapiservice.param;
 
 import com.kimoota.kimootaapiservice.domain.AuthProvider;
 import com.kimoota.kimootaapiservice.exception.OAuth2AuthenticationProcessingException;
