@@ -6,7 +6,7 @@ import com.kimoota.kimootaapiservice.exception.OAuth2AuthenticationProcessingExc
 import com.kimoota.kimootaapiservice.param.OAuth2UserParam;
 import com.kimoota.kimootaapiservice.param.OAuth2UserParamFactory;
 import com.kimoota.kimootaapiservice.repository.user.UserRepository;
-import com.kimoota.kimootaapiservice.security.oauth2.UserPrincipal;
+import com.kimoota.kimootaapiservice.security.UserPrincipal;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.InternalAuthenticationServiceException;
 import org.springframework.security.core.AuthenticationException;

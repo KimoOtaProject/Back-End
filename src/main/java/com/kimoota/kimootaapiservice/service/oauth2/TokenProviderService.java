@@ -1,7 +1,7 @@
 package com.kimoota.kimootaapiservice.service.oauth2;
 
 import com.kimoota.kimootaapiservice.config.AppProperties;
-import com.kimoota.kimootaapiservice.security.oauth2.UserPrincipal;
+import com.kimoota.kimootaapiservice.security.UserPrincipal;
 import io.jsonwebtoken.*;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
